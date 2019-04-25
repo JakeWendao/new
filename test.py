@@ -114,4 +114,25 @@
 # ls=[1,2,3]
 # rs=map(str,ls)
 # print(list（rs）)
+# # 6、用*号输出字母P的图案
+# print 'Hello Python World!\n'
+# print '*'*10
+# for i in range(5):
+#     print '*        *'
+# print '*'*10
+# print '*\n'*6
+# # 7、输出特殊图案
+# a = 176
+# b = 219
+# print chr(b),chr(a),chr(a),chr(a),chr(b)
+# print chr(a),chr(b),chr(a),chr(b),chr(a)
+# print chr(a),chr(a),chr(b),chr(a),chr(a)
+# print chr(a),chr(b),chr(a),chr(b),chr(a)
+# print chr(b),chr(a),chr(a),chr(a),chr(b)
+# 8、输出9*9口诀
+# for i in range(0,10):
+#     for j in range(1,i+1):
+#         print i,'*',j,' ',
+#     print '\n',
+
 
