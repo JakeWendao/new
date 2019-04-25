@@ -64,12 +64,54 @@
 # 分析：x与y比较，较小的放在x上，x与z比较，较小的放在x上，保证x最小，然后y跟z比较，较小的放在y上，确定排序。
 # 也可以使用sort()，官方的排序。
 #下面是对1个列表进行排序，然后对列表进行倒序。
-I = [2,8,1]
-I.sort()
-I1 = []
-length = len(I)
-for i in range(length-1,-1,-1):
-    I1.append(I[i])
-    print i
-print I1
+# I = [2,8,1]
+# I.sort()
+# I1 = []
+# length = len(I)
+# for i in range(length-1,-1,-1):
+#     I1.append(I[i])
+#     print i
+# print I1
 #下面是进行解题。
+# str = raw_input(u"请输入您的3个数字，中间空格隔开\n")
+# list1 = str.split(' ')
+# x = int(list1[0])
+# y = int(list1[1])
+# z = int(list1[2])
+# someone = 0
+# if (x<y):
+#     pass
+# else:
+#     someone = x
+#     x = y
+#     y = someone
+# if (x<z):
+#     pass
+# else:
+#     someone = x
+#     x = z
+#     z = someone
+# if (y<z):
+#     pass
+# else:
+#     someone = y
+#     y = z
+#     z = someone
+# print type(x),y,z
+
+# 增加示例：有时需要将list以str的形式输出
+# ",".join(list_sample)  比如下面的
+# a_list = ["h","e","l","l","o"]
+# print ",".join(a_list)
+# 但是有时，列表里是数字，那么需要先把数字改为字符串。
+# num_list = [0,1,2,3,4,5,6,7,8,9]
+# num_list_new = [str(x) for x in num_list]  #这一行还可以用num_list_new = map(lambda x:str(x), num_list)
+# print type(",".join(num_list_new))
+#想把list里面的str变为int，可以用下面的方法，仅适用于python2
+# num_list = ['0','1']
+# num_list_new = map(eval, num_list)
+# #python3中需要这么用
+# ls=[1,2,3]
+# rs=map(str,ls)
+# print(list（rs）)
+
