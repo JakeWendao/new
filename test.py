@@ -130,9 +130,16 @@
 # print chr(a),chr(b),chr(a),chr(b),chr(a)
 # print chr(b),chr(a),chr(a),chr(a),chr(b)
 # 8、输出9*9口诀
+#方法1，我自己想的，感觉这样排比较好。
 # for i in range(0,10):
 #     for j in range(1,i+1):
 #         print i,'*',j,' ',
 #     print '\n',
-
+#方法2 答案。
+# for i in range(1,10):
+#     for j in range(1,10):
+#         result = i * j
+#         print '%d * %d = %-3d'%(i,j,result)
+#     print ''
+# 9、要求输出国际象棋棋盘
 
