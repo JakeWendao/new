@@ -5,6 +5,7 @@
 import unittest
 from init import Init
 import sys
+import HtmlTestRunner
 
 class TestLogin(Init):
     def test_login3(self):
@@ -14,3 +15,5 @@ class TestLogin(Init):
 # def login():
 #     unittest.main(verbosity=2)
 #
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
