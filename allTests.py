@@ -5,6 +5,7 @@
 
 import unittest
 import os
+import HtmlTestRunner
 
 def allTestsCase():
     suite = unittest.defaultTestLoader.discover(

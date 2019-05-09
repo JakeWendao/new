@@ -2,4 +2,7 @@
 # -*-coding:utf-8-*-
 # author:jakewendao
 
-# import new
+from init import Init
+
+class searchNews(Init):
+    def
