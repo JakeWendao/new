@@ -7,8 +7,8 @@ from init import Init
 import sys
 
 
-class TestLogin(Init):
-    def test_login3(self):
+class HomePage(Init):
+    def test_home1(self):
         title = self.driver.title
         print title
 
