@@ -13,4 +13,4 @@ class Init(unittest.TestCase):
         self.driver.implicitly_wait(30)
         self.driver.get('http://www.baidu.com')
     def tearDown(self):
-        self.driver.close()
+        self.driver.quit()

@@ -12,5 +12,5 @@ class HomePage(Init):
         title = self.driver.title
         print title
 
-# if __name__ == '__main__':
-#     unittest.main(verbosity=2)
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
