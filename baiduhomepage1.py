@@ -13,4 +13,6 @@ class HomePage(Init):
         print title
 
 if __name__ == '__main__':
-    unittest.main(verbosity=2)
+    # 使用加载测试类形成测试套件的方法，来进行运行单元测试用例
+    suite = unittest.TestLoader().loadTestsFromTestCase(HomePage)
+    unittest.TextTestRunner(verbosity=2).run(suite)
