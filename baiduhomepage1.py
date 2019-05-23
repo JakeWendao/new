@@ -9,6 +9,7 @@ import sys
 
 class HomePage(Init):
     def test_home1(self):
+        '''测试百度首页名称'''
         title = self.driver.title
         print title
 
