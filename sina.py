@@ -15,15 +15,8 @@ class sina(unittest.TestCase):
         self.driver.quit()
     def test_spnUid(self):
         self.driver.implicitly_wait(30)
-        # spnUid = self.driver.find_element_by_id('spnUid')
-        # self.assertEqual(spnUid,'liujingjieyear@163.com')
-        # un_login = self.driver.find_element_by_xpath('//*[@id="un-login"]').is_selected()
-        #
-        # self.driver.find_element_by_tag_name()
-        # self.assertFalse(un_login)
-        #通过xpath来寻找iframe
-        frame = self.driver.find_element_by_xpath("//div[@class='loginUrs']/iframe")
-        print frame.id
-        # self.driver.switch_to.frame(frame)
-        # https://www.cnblogs.com/glre09/p/3231782.html
-        #
+        #通过xpath来寻找动态iframe
+        iframe = self.driver.find_element_by_xpath("//iframe[starts-with(@id,'x-URS-iframe')]")
+        self.driver.switch_to.frame(iframe)
+        un_login = self.driver.find_element_by_id('un-login').is_selected()
+        self.assertTrue(un_login)
