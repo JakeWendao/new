@@ -6,6 +6,7 @@ import unittest
 import os
 import HTMLTestRunner
 import baidusearch1
+import time
 import sys
 reload(sys)
 sys.setdefaultencoding( "utf-8" )
@@ -20,7 +21,10 @@ def allTestsCase():
     )
     return suite
 
-fp = open('TestReport.html','wb')
+def getNowTime():
+    return time.strftime('%Y-%m-%d %H_%M_%S')
+
+fp = open(getNowTime()+' TestReport.html','wb')
 runner = HTMLTestRunner.HTMLTestRunner(stream=fp,
                                     verbosity=2,
                                     title=u'百度例子测试报告',
