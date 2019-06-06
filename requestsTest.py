@@ -3,8 +3,14 @@
 # author:jakewendao
 
 import requests
-r = requests.get('http://www.baidu.com')
-print r.text
+data = {'word':'Selenium自动化测试实战（Python语言版）'}
+
+r = requests.get('https://yuedu.baidu.com/search',params=data)
+# r.encoding= 'iso8859-1'
 print u'请求地址'+' ok ',r.url
-print r.status_code
-print r.json()   #这个地方报错是正常的，因为返回的信息不是json编码 1
+
+print type(r)
+
+print r.text
+print r.json()
+print (r.text.encode(r.encoding).decode(r.apparent_encoding))
