@@ -143,5 +143,6 @@
 #     print ''
 # 9、要求输出国际象棋棋盘
 
-he = 'hello ae'
-print he.expandtabs()
+name = 'jake'
+age = 8
+print "My name is %s, my age is %d."%(name,age)
