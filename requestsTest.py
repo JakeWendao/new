@@ -13,3 +13,4 @@ print u'请求地址'+' ok ',r.url
 dic = json.loads(r.text.encode(r.encoding).decode(r.apparent_encoding))
 print dic
 print dic['failDescription']
+

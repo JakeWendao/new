@@ -143,3 +143,5 @@
 #     print ''
 # 9、要求输出国际象棋棋盘
 
+he = 'hello ae'
+print he.expandtabs()
